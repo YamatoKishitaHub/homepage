@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamato Kishita's Homepage</title>
+    <link rel="shortcut icon" href="images/pictogram-y.png" type="image/x-icon">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.css">
+    <script src="./swiper/swiper-bundle.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T29TK2N443"></script>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header_title">
+        <a href="index.html" class="header_title_link">木下倭のホームページ</a>
+      </div>
+      <nav class="header_nav">
+        <ul class="header_nav_parent_ul">
+          <li class="header_nav_parent_li header_nav_parent_li_profile">
+            <a href="#profile">プロフィール</a>
+            <ul class="header_nav_child_ul">
+              <li class="header_nav_child_li"><a href="#resume">経歴</a></li>
+              <li class="header_nav_child_li"><a href="#personality">性格</a></li>
+            </ul>
+          </li>
+          <li class="header_nav_parent_li header_nav_parent_li_university">
+            <a href="#university">大学</a>
+            <ul class="header_nav_child_ul">
+              <li class="header_nav_child_li"><a href="#university-faculty">大学/学部</a></li>
+              <li class="header_nav_child_li"><a href="#awards">表彰</a></li>
+              <li class="header_nav_child_li"><a href="#laboratory">研究室</a></li>
+              <li class="header_nav_child_li"><a href="#gachalun">ガチャラン</a></li>
+            </ul>
+          </li>
+          <li class="header_nav_parent_li header_nav_parent_li_skill">
+            <a href="#skill">スキル</a>
+            <ul class="header_nav_child_ul">
+              <li class="header_nav_child_li"><a href="#certification">資格</a></li>
+              <li class="header_nav_child_li"><a href="#frontend">フロントエンド</a></li>
+              <li class="header_nav_child_li"><a href="#backend">バックエンド</a></li>
+              <li class="header_nav_child_li"><a href="#ai-ds">AI・DS</a></li>
+              <li class="header_nav_child_li"><a href="#other-skill">その他技術</a></li>
+            </ul>
+          </li>
+          <li class="header_nav_parent_li header_nav_parent_li_hobby">
+            <a href="#hobby">趣味</a>
+            <ul class="header_nav_child_ul">
+              <li class="header_nav_child_li"><a href="#pokemon">ポケモン</a></li>
+              <li class="header_nav_child_li"><a href="#chiikawa">ちいかわ</a></li>
+            </ul>
+          </li>
+          <li class="header_nav_parent_li header_nav_parent_li_values">
+            <a href="#values">価値観</a>
+            <ul class="header_nav_child_ul">
+              <li class="header_nav_child_li"><a href="#motto">座右の銘</a></li>
+              <li class="header_nav_child_li"><a href="#career">キャリア</a></li>
+              <li class="header_nav_child_li"><a href="#work">働き方</a></li>
+            </ul>
+          </li>
+          <li class="header_nav_parent_li header_nav_parent_li_contact">
+            <a href="#contact">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <form class="header_search">
+        <input type="text" class="header_search_input" list="history">
+        <input type="submit" class="material-symbols-outlined header_search_submit" value="Search">
+        <datalist id="history" class="header_search_datalist"></datalist>
+      </form> -->
+      <div class="header_hamburger">
+        <span class="material-symbols-outlined header_hamburger_open">menu</span>
+      </div>
+    </header>
+    <div class="overlay">
+      <span class="material-symbols-outlined overlay_close">close</span>
+      <nav class="overlay_nav">
+        <ul class="overlay_nav_parent_ul">
+          <li class="overlay_nav_parent_li overlay_nav_parent_li_profile">
+            <a href="#profile">プロフィール</a>
+            <ul class="overlay_nav_child_ul">
+              <li class="overlay_nav_child_li"><a href="#resume">経歴</a></li>
+              <li class="overlay_nav_child_li"><a href="#personality">性格</a></li>
+            </ul>
+          </li>
+          <li class="overlay_nav_parent_li overlay_nav_parent_li_university">
+            <a href="#university">大学</a>
+            <ul class="overlay_nav_child_ul">
+              <li class="overlay_nav_child_li"><a href="#university-faculty">大学/学部</a></li>
+              <li class="overlay_nav_child_li"><a href="#awards">表彰</a></li>
+              <li class="overlay_nav_child_li"><a href="#laboratory">研究室</a></li>
+              <li class="overlay_nav_child_li"><a href="#gachalun">ガチャラン</a></li>
+            </ul>
+          </li>
+          <li class="overlay_nav_parent_li overlay_nav_parent_li_skill">
+            <a href="#skill">スキル</a>
+            <ul class="overlay_nav_child_ul">
+              <li class="overlay_nav_child_li"><a href="#certification">資格</a></li>
+              <li class="overlay_nav_child_li"><a href="#frontend">フロントエンド</a></li>
+              <li class="overlay_nav_child_li"><a href="#backend">バックエンド</a></li>
+              <li class="overlay_nav_child_li"><a href="#ai-ds">AI・DS</a></li>
+              <li class="overlay_nav_child_li"><a href="#other-skill">その他技術</a></li>
+            </ul>
+          </li>
+          <li class="overlay_nav_parent_li overlay_nav_parent_li_hobby">
+            <a href="#hobby">趣味</a>
+            <ul class="overlay_nav_child_ul">
+              <li class="overlay_nav_child_li"><a href="#pokemon">ポケモン</a></li>
+              <li class="overlay_nav_child_li"><a href="#chiikawa">ちいかわ</a></li>
+            </ul>
+          </li>
+          <li class="overlay_nav_parent_li overlay_nav_parent_li_values">
+            <a href="#values">価値観</a>
+            <ul class="overlay_nav_child_ul">
+              <li class="overlay_nav_child_li"><a href="#motto">座右の銘</a></li>
+              <li class="overlay_nav_child_li"><a href="#career">キャリア</a></li>
+              <li class="overlay_nav_child_li"><a href="#work">働き方</a></li>
+            </ul>
+          </li>
+          <li class="overlay_nav_parent_li overlay_nav_parent_li_contact">
+            <a href="#contact">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="main">
+      <div class="hero">
+        <img src="./images/aogaku-snow-hero.jpg" alt="青山学院大学（雪）">
+        <div class="hero_text">
+          <br>
+            初めまして、木下倭と申します。</br>よろしくお願いします！
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="container" id="profile">
+        <h2 class="container_title">プロフィール</h2>
+        <div class="container_content" id="resume">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/me-now.png" class="ss-image" alt="自分の写真（現在）">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/me-kid.png" class="ss-image" alt="自分の写真（子ども）">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>経歴</h2>
+            <ul>
+              <li>木下 倭（きした やまと）</li>
+              <li>20歳</li>
+              <li>2021年4月 青山学院大学社会情報学部 入学</li>
+              <li>2025年3月 青山学院大学社会情報学部 卒業予定</li>
+              <li>2025年4月 青山学院大学社会情報学研究科 入学予定</li>
+              <li>2026年3月 青山学院大学社会情報学研究科 卒業予定</li>
+            </ul>
+            <p>
+              木下倭と申します。よろしくお願いいたします。学部時代からの取り組みによっては、<a href="https://www.aoyama.ac.jp/faculty/graduate_ssi/dsi/ssi/courses/" target="_blank">修士課程を1年で修了できる制度があり</a>、私も1年で修了することを目標にしています。
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="personality">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/pose_gutspose_business.png" class="ss-image" alt="ガッツポーズ">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>パーソナリティ</h2>
+            <ul>
+              <li>16Personalities</li>
+              <li>ISFJ</li>
+              <li>擁護者</li>
+            </ul>
+            <p>
+              <a href="https://www.16personalities.com/ja" target="_blank">16Personalities性格診断テスト</a>を受けた結果、<a href="https://www.16personalities.com/ja/isfj%E5%9E%8B%E3%81%AE%E6%80%A7%E6%A0%BC" target="_blank">擁護者(ISFJ)タイプ</a>だと診断されました。16Personalitiesによると、「擁護者型（特に慎重型）の人達は、完璧なほど細部にこだわり、時間はかかりますが、常に予定通りに作業を完了させます。」とあります。その通りで、細かいところまで気にすることが多いですが、自分の役割は責任を持って実行することを意識しています。今は学生ですが、数年後には社会人になるため、責任感と自覚を大切にしていきたいです。
+            </p>
+          </div>
+        </div>
+        <div class="container_thumbnail">
+          <button class="container_thumbnail_prev">&lt;</button>
+          <div class="container_thumbnail_content">
+            <img src="./images/me-now.png" alt="自分の写真（現在）">
+            <div class="container_thumbnail_content_text">経歴</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/pose_gutspose_business.png" alt="ガッツポーズ">
+            <div class="container_thumbnail_content_text">性格</div>
+          </div>
+          <button class="container_thumbnail_next">&gt;</button>
+        </div>
+      </div>
+      <hr>
+      <div class="container" id="university">
+        <h2 class="container_title">大学</h2>
+        <div class="container_content" id="university-faculty">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/aogaku-snow.jpg" class="ss-image" alt="青山学院大学（雪）">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/aogaku-chapel.png" class="ss-image" alt="青山学院大学（チャペル）">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/aogaku-b.jpg" class="ss-image" alt="青山学院大学B棟">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/aogaku-o.jpg" class="ss-image" alt="青山学院大学O棟">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>大学/学部</h2>
+            <ul>
+              <li>青山学院大学</li>
+              <li>社会情報学部社会情報学科</li>
+              <li>社会・情報コース</li>
+              <li>伊藤一成研究室</li>
+              <li>相模原キャンパス</li>
+            </ul>
+            <p>
+              文理融合の<a href="https://www.si.aoyama.ac.jp/" target="_blank">社会情報学部</a>に所属しています。情報系や融合的な領域について学習しています。複数の視点から、幅広くものごとを捉えるように意識しております。
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="awards">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/aogaku-snow.jpg" class="ss-image" alt="青山学院大学（雪）">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/aogaku-chapel.png" class="ss-image" alt="青山学院大学（チャペル）">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/aogaku-b.jpg" class="ss-image" alt="青山学院大学B棟">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/aogaku-o.jpg" class="ss-image" alt="青山学院大学O棟">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>表彰</h2>
+            <ul>
+              <li>青山学院大学 2022年度 学業成績優秀者表彰 奨励賞</li>
+              <li>青山学院大学 2023年度 学業成績優秀者表彰 優秀賞</li>
+            </ul>
+            <p>
+              <a href="https://ac.cdn-aoyamagakuin.com/wp-content/uploads/2022/07/HP%E6%8E%B2%E8%BC%89%E7%94%A82022%E5%B9%B4%E5%BA%A6%E5%8F%97%E8%B3%9E%E8%80%85%E4%B8%80%E8%A6%A7-1.pdf" target="_blank">2022年度には、学業成績優秀者表彰 奨励賞をいただくことができました</a>。<a href="https://ac.cdn-aoyamagakuin.com/wp-content/uploads/2023/07/prize_gakugyou_-seiseki2023.pdf" target="_blank">2023年度には、2022年度に奨励賞をいただいたこともあり、さらに上を目指した結果、優秀賞をいただくことができました</a>。2024年度も受賞できるように頑張りたいです。また、今後は研究に力を入れ、学会で賞をいただけるようにすることが目標です。2023年9月に情報処理学会に初めて参加する予定です。
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="laboratory">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/pictogram-instruction.png" class="ss-image" alt="ピクトグラム（指示）">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pictogram-y.png" class="ss-image" alt="ピクトグラム(Y)">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pictogram-k.png" class="ss-image" alt="ピクトグラム(K)">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>研究室</h2>
+            <ul>
+              <li>伊藤一成研究室所属</li>
+              <li>ピクトグラム</li>
+              <li>情報教育</li>
+            </ul>
+            <p>
+              伊藤一成研究室に所属しています。情報教育やメディア情報処理に関する研究室です。また、伊藤研究室では、ピクトグラムに関する研究が多く行われています。自分もピクトグラムを用いたアプリケーションの開発を行っています。
+            </p>
+            <p>
+              卒業論文はこちら→ Coming Soon<br>開発アプリケーションはこちら→ Coming Soon
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="gachalun">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/gachalun2.jpg" class="ss-image" alt="ガチャラン集合写真">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gachalun1.jpg" class="ss-image" alt="ガチャランガチャガチャ">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>ガチャラン</h2>
+            <ul>
+              <li>ガチャガチャでランチ</li>
+            </ul>
+            <p>
+              2022年度、「プロジェクト演習入門Ⅱ」という授業で、「ガチャラン」という企画を行いました。相模原キャンパス内にある購買会の売上を向上させることを目標に、アイデアを出し合い、実際に販売まで行いました。メンバー6人と、たくさんのアイデアを出し合い、お店の方との交渉なども行いました。そして、12月初旬、昼食をガチャガチャ形式で販売するという「ガチャラン」を成功させることができました。多くの方に楽しんでいただき、たくさんの暖かいお言葉を頂きました。そして、この「ガチャラン」を<a href="https://agunewspaper.com/2023/01/28/202301283a/" target="_blank">青学新聞さんに記事にしていただくこと</a>までできました。6人で「ガチャラン」をすることができて、楽しかったです。
+            </p>
+          </div>
+        </div>
+        <div class="container_thumbnail">
+          <button class="container_thumbnail_prev">&lt;</button>
+          <div class="container_thumbnail_content">
+            <img src="./images/aogaku-snow.jpg" alt="青山学院大学（雪）">
+            <div class="container_thumbnail_content_text">大学</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/aogaku-snow.jpg" alt="青山学院大学（雪）">
+            <div class="container_thumbnail_content_text">表彰</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/pictogram-y.png" alt="ピクトグラム(Y)">
+            <div class="container_thumbnail_content_text">研究室</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/gachalun2.jpg" alt="ガチャランガチャガチャ">
+            <div class="container_thumbnail_content_text">ガチャラン</div>
+          </div>
+          <button class="container_thumbnail_next">&gt;</button>
+        </div>
+      </div>
+      <hr>
+      <div class="container" id="skill">
+        <h2 class="container_title">スキル</h2>
+        <div class="container_content" id="certification">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/toeic.png" class="ss-image" alt="TOEIC">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/fundamental-information-technology-engineer.png" class="ss-image" alt="基本情報技術者試験">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/information-security-management.png" class="ss-image" alt="情報セキュリティマネジメント試験">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/it-passport.png" class="ss-image" alt="ITパスポート">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>保有資格</h2>
+            <ul>
+              <li>基本情報技術者試験</li>
+              <li>情報セキュリティマネジメント試験</li>
+              <li>G検定（JDLA Deep Learning for GENERAL 2023#2）</li>
+              <li>TOEIC Listening & Readingスコア 755点</li>
+              <li>日本商工会議所簿記検定試験3級</li>
+            </ul>
+            <p>
+              今まで大学で学んだことの理解を深めるために、主に情報系の資格を取得してきました。今後は情報処理技術者試験の上位資格を取得していきたいです。2023年秋に応用情報技術者試験を受験する予定です。
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="frontend">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/frontend.png" class="ss-image" alt="フロントエンドコード">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>フロントエンド</h2>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>React, Next.js, TypeScript</li>
+            </ul>
+            <p>
+              HTML/CSS/JavaScriptを学習してきました。今後も学習を続けていきたいです。フレームワークなども学習していきたいです。このホームページもHTML/CSS/JavaScriptで実装しています。<br>制作した作品は<a href="https://yamatokishita2nd.github.io/quiz/index.html" target="_blank">こちら</a>です。クイズアプリケーションです。リロードするたびにクイズの順番と選択肢の順番が変化する点に力を入れました。
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="backend">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/backend.png" class="ss-image" alt="バックエンドコード">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>バックエンド</h2>
+            <ul>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+            </ul>
+            <p>
+              バックエンドも学習してきました。<a href="https://github.com/YamatoKishita2nd/AHS" target="_blank">クイズアプリケーション（グラフでのスコア確認や掲示板の機能付き）</a>を作成しました。今後はよりレベルの高いアプリケーションの開発を多くしていきたいです。また、今後はインターンシップに参加することで、バックエンドの実力をつけていきたいと考えています。
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="ai-ds">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/aids.png" class="ss-image" alt="AI・DSコード">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>AI・データサイエンス実践プログラム</h2>
+            <ul>
+              <li>dodaキャンパス</li>
+              <li>キカガク</li>
+              <li>データサイエンス・機械学習</li>
+            </ul>
+            <p>
+              2023年5月から7月まで、<a href="https://campus.doda.jp/" target="_blank">dodaキャンパス</a>さんと<a href="https://www.kikagaku.ai/" target="_blank">キカガク</a>さんの「<a href="https://campus.doda.jp/aiprogram/202304" target="_blank">AI・データサイエンス実践プログラム</a>」に参加させていただいてます。5人チームでデータサイエンス、機械学習について学習しています。ChatGPTが普及したことなどにより、興味を持ち、応募させていただきました。今後、さらにAIやデータサイエンスに関する理解を深めていきたいです。
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="other-skill">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/github.png" class="ss-image" alt="GitHUb">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>その他技術</h2>
+            <ul>
+              <li>Git/GitHub</li>
+              <li>Docker</li>
+              <li>AWS</li>
+            </ul>
+            <p>
+              これらの技術も今後さらに学習していきたいと思います。<br>GitHubのアカウントは<a href="https://github.com/yamatokishitaHub" target="_blank">YamatoKishitaHub</a>です。
+            </p>
+          </div>
+        </div>
+        <div class="container_thumbnail">
+          <button class="container_thumbnail_prev">&lt;</button>
+          <div class="container_thumbnail_content">
+            <img src="./images/fundamental-information-technology-engineer.png" alt="基本情報技術者試験">
+            <div class="container_thumbnail_content_text">資格</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/frontend.png" alt="フロントエンドコード">
+            <div class="container_thumbnail_content_text">フロントエンド</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/backend.png" alt="バックエンドコード">
+            <div class="container_thumbnail_content_text">バックエンド</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/aids.png" alt="AI・DSコード">
+            <div class="container_thumbnail_content_text">AI・DS</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/github.png" alt="GitHub">
+            <div class="container_thumbnail_content_text">その他技術</div>
+          </div>
+          <button class="container_thumbnail_next">&gt;</button>
+        </div>
+      </div>
+      <hr>
+      <div class="container" id="hobby">
+        <h2 class="container_title">趣味</h2>
+        <div class="container_content" id="pokemon">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/monster06.png" class="ss-image" alt="モンスター06">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/monster10.png" class="ss-image" alt="モンスター10">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/monster11.png" class="ss-image" alt="モンスター11">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>ポケモン</h2>
+            <ul>
+              <li>ゲーム</li>
+              <li>アニメ</li>
+              <li>ポケモン自己分析</li>
+            </ul>
+            <p>
+              子供の頃から<a href="https://www.pokemon.co.jp/">ポケモン</a>が好きです。ポケモンのゲームを今でもしています。アニメも見ています。好きなポケモンはミロカロスやミズゴロウです。<br>株式会社ポケモンセンターが提供している<a href="https://recruit.pokemon.co.jp/pokemoncenter/special/" target="_blank">ポケモン自己分析</a>では、<a href="https://recruit.pokemon.co.jp/pokemoncenter/special/result/porygon.html" target="_blank">ポリゴンの要素を持つ人材！</a>と診断されました。「データや理論を重要視する分析タイプ。」ということで、今後の仕事に活かしていきたいです。
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="chiikawa">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/animal_momonga.png" class="ss-image" alt="モモンガ">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/animal_usaghi_netherland_dwarf.png" class="ss-image" alt="うさぎ">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/character_animal_rakko.png" class="ss-image" alt="ラッコ">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>ちいかわ</h2>
+            <ul>
+              <li>ハチワレ</li>
+              <li>うさぎ</li>
+              <li>モモンガ</li>
+              <li>くりまんじゅう</li>
+              <li>ラッコ</li>
+            </ul>
+            <p>
+              <a href="https://www.anime-chiikawa.jp/" target="_blank">ちいかわ</a>のアニメを見ることが好きです。特に好きなキャラクターはうさぎです。叫んでいるところがすきです。癒されるのでぜひ見てください！
+            </p>
+          </div>
+        </div>
+        <div class="container_thumbnail">
+          <button class="container_thumbnail_prev">&lt;</button>
+          <div class="container_thumbnail_content">
+            <img src="./images/monster06.png" alt="モンスター06">
+            <div class="container_thumbnail_content_text">ポケモン</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/animal_usaghi_netherland_dwarf.png" alt="うさぎ">
+            <div class="container_thumbnail_content_text">ちいかわ</div>
+          </div>
+          <button class="container_thumbnail_next">&gt;</button>
+        </div>
+      </div>
+      <hr>
+      <div class="container" id="values">
+        <h2 class="container_title">価値観</h2>
+        <div class="container_content" id="motto">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/ai_heart_kokoro.png" class="ss-image" alt="人の心を持ったAI">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/figure_tasuke.png" class="ss-image" alt="肩を貸す人">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>座右の銘</h2>
+            <ul>
+              <li>cool head but warm heart</li>
+              <li>アルフレッド・マーシャル</li>
+              <li>冷静な頭脳と温かい心</li>
+            </ul>
+            <p>
+              「cool head but warm heart」という言葉を意識しています。経済学の授業で先生がご紹介してくださり、好きになりました。近代経済学の祖と言われるアルフレッド・マーシャルの言葉です。「冷静な頭脳と温かい心」は経済学者としてだけでなく、全ての人に重要なものだと思います。自分も冷静で適切な判断ができ、かつ、人のことを思いやることができる人間になりたいです。
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="career">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/computer_mob_programming.png" class="ss-image" alt="チームでプログラミング">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/mark_computer_waterfall.png" class="ss-image" alt="ウォーターフォールのマーク">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/computer_programming_man.png" class="ss-image" alt="プログラミングをする人">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>キャリア</h2>
+            <ul>
+              <li>システムエンジニア</li>
+              <li>ITコンサルタント</li>
+              <li>プロジェクトマネージャー</li>
+              <li>上流工程</li>
+            </ul>
+            <p>
+              どのようなキャリアにしていきたいか考えています。IT業界への就職を考えており、上流工程に関わりたいです。上流工程に関わりたい理由は、社会に役立つ仕事をしたく、自分でもアイデアをたくさん出すことができる仕事がしたいからです。人間1人でできることは限られますが、チームになればできることが増えると思います。プロジェクトに積極的に参加したいです。
+            </p>
+          </div>
+        </div>
+        <div class="container_content" id="work">
+          <div class="swiper-container container_content_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/room_office_clean.png" class="ss-image" alt="綺麗なオフィス">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/video_kaigi.png" class="ss-image" alt="ビデオ会議">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="container_content_text">
+            <h2>働き方</h2>
+            <ul>
+              <li>ワークライフバランス</li>
+              <li>テレワーク</li>
+              <li>オフィスワーク</li>
+            </ul>
+            <p>
+              ワークライフバランスを大切にしたいです。仕事も楽しんで、趣味も楽しむことを目標にしています。<br>オンライン授業を受けていた際には、テレワークも良さそうだなと考えていました。しかし、対面でグループワークをしたり、実際にキャンパスでたくさん人がいるのを見たりして、出社するのもいいなと思いました。テレワークの日があるのもいいですが、基本的に出社したいです。
+            </p>
+          </div>
+        </div>
+        <div class="container_thumbnail">
+          <button class="container_thumbnail_prev">&lt;</button>
+          <div class="container_thumbnail_content">
+            <img src="./images/ai_heart_kokoro.png" alt="人の心を持ったAI">
+            <div class="container_thumbnail_content_text">座右の銘</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/computer_mob_programming.png" alt="チームでプログラミング">
+            <div class="container_thumbnail_content_text">キャリア</div>
+          </div>
+          <div class="container_thumbnail_content">
+            <img src="./images/room_office_clean.png" alt="綺麗なオフィス">
+            <div class="container_thumbnail_content_text">働き方</div>
+          </div>
+          <button class="container_thumbnail_next">&gt;</button>
+        </div>
+      </div>
+      <hr>
+      <div class="container" id="contact">
+        <h2 class="container_title">コンタクト</h2>
+        <div class="container_content">
+          <div class="container_content_text container_content_text_contact">
+            <h2>お問い合わせ</h2>
+            <p>以下のフォームからメールを送信できます。<br>送信した後に、自動返信メールが届きます。メールが届かない場合はメールアドレスが誤っている可能性がありますので、お気をつけください。<br>こちらのお問い合わせフォームには、<a href="https://www.emailjs.com/" target="_blank">EmailJS</a>を使用しています。</p>
+            <form id="contact-form">
+              <p id="contact-form-error" class="hide">全ての項目を入力してください。</p>
+              <input type="hidden" name="contact_number">
+              <div id="contact-form-name">
+                <label>お名前<span>(必須)</span></label>
+                <input type="text" name="name" autocomplete="name">
+              </div>
+              <div id="contact-form-belong">
+                <label>ご所属<span>(必須)</span></label>
+                <input type="text" name="belong">
+              </div>
+              <div id="contact-form-email">
+                <label>メールアドレス<span>(必須)</span></label>
+                <p id="contact-form-email-error" class="hide">正しいメールアドレスを入力してください。</p>
+                <input type="email" name="email" placeholder="example@example.com" autocomplete="email">
+              </div>
+              <div id="contact-form-message">
+                <label>本文<span>(必須)</span></label>
+                <textarea name="message"></textarea>
+              </div>
+              <div id="contact-form-submit">
+                <input type="submit" value="送信する">
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="cookie">
+        <div class="cookie_text">当サイトではCookieを使用しています。</div>
+        <div class="cookie_button">
+          <input type="submit" class="cookie_button_agree" value="同意する"></input>
+          <input type="submit" class="cookie_button_disagree" value="同意しない"></input>
+        </div>
+      </div>
+      <a href="#top" class="backtop hide">BACK TO TOP</a>
+    </main>
+    <footer class="footer">
+      <div>
+        当サイトの作成にあたり、<a href="https://www.irasutoya.com/" target="_blank">いらすとや</a>さん、<a href="https://fonts.google.com/" target="_blank">Google Fonts</a>さんのフリー素材を使用させていただきました。厚く御礼申し上げます。
+      </div>
+      <small class="copyright">
+        &copy; 2023<span class="hyphen"></span><span class="this_year"></span> Yamato Kishita
+      </small>
+    </footer>
+  </body>
+</html>
